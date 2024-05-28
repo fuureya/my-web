@@ -20,11 +20,14 @@ const Jumbotron = () => {
             <h1 className="md:text-4xl text-xl font-bold text-white mb-4">
               Deskripsi Singkat
             </h1>
-            <p className="text-white md:text-lg text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <p className="text-white md:text-lg text-sm text-justify">
+              Saya Agil Jibrin, seorang yang terampil dalam pemrograman web dan
+              konfigurasi jaringan MikroTik. Dengan dedikasi dan keahlian saya,
+              saya mampu menciptakan situs web yang menarik dan fungsional,
+              serta mengelola jaringan dengan efisiensi dan keamanan yang
+              tinggi. Saya percaya bahwa dengan terus mengasah kemampuan dan
+              berinovasi, saya dapat memberikan kontribusi yang berarti dalam
+              dunia teknologi informasi.
             </p>
           </div>
         </div>
