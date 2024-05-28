@@ -14,7 +14,10 @@ const Header = () => {
         <div className="lg:w-1/2 flex justify-center lg:justify-end items-center ">
           <div className="text-white flex items-center">
             {/* Ikon Media Sosial */}
-            <a href="#" className="text-white mr-4 hover:text-gray-400">
+            <a
+              href="https://web.facebook.com/profile.php?id=100079770827303"
+              className="text-white mr-4 hover:text-gray-400"
+            >
               <i className="fab fa-facebook-f"></i>
             </a>
             <a href="#" className="text-white mr-4 hover:text-gray-400">

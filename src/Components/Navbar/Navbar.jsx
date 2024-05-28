@@ -20,29 +20,41 @@ const Navbar = () => {
             onClick={toggleMobileMenu}
             className="text-gray-500 hover:text-white focus:outline-none focus:text-white transition duration-300 transform hover:scale-110"
           >
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           </button>
         </div>
         {/* Desktop Menu */}
         <div className="hidden lg:flex lg:items-center lg:w-auto " id="menu">
           <ul className="text-lg lg:flex items-center justify-between text-gray-300">
             <li>
-              <a href="#" className="block lg:inline-block mt-4 lg:mt-0 mr-10">
+              <a
+                href="#"
+                className="block lg:inline-block mt-4 md:text-sm text-xs lg:mt-0 mr-10 hover:text-white"
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="block lg:inline-block mt-4 lg:mt-0 mr-10">
+              <a
+                href="#"
+                className="block lg:inline-block md:text-sm text-xs mt-4 hover:text-white lg:mt-0 mr-10"
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="block lg:inline-block mt-4 lg:mt-0 mr-10">
+              <a
+                href="#"
+                className="block lg:inline-block md:text-sm text-xs mt-4 lg:mt-0 mr-10 hover:text-white"
+              >
                 Services
               </a>
             </li>
             <li>
-              <a href="#" className="block lg:inline-block mt-4 lg:mt-0">
+              <a
+                href="#"
+                className="block lg:inline-block md:text-sm text-xs mt-4 lg:mt-0 hover:text-white"
+              >
                 Contact
               </a>
             </li>
@@ -61,22 +73,22 @@ const Navbar = () => {
           {" "}
           {/* Text center on mobile */}
           <li>
-            <a href="#" className="block mt-4">
+            <a href="#" className="block mt-4 text-sm">
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="block mt-4">
+            <a href="#" className="block mt-4 text-sm">
               About
             </a>
           </li>
           <li>
-            <a href="#" className="block mt-4">
+            <a href="#" className="block mt-4 text-sm">
               Services
             </a>
           </li>
           <li>
-            <a href="#" className="block mt-4">
+            <a href="#" className="block mt-4 text-sm">
               Contact
             </a>
           </li>

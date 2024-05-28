@@ -17,10 +17,10 @@ const Jumbotron = () => {
           </div>
           {/* Deskripsi */}
           <div className="lg:w-1/2">
-            <h1 className="text-4xl font-bold text-white mb-4">
+            <h1 className="md:text-4xl text-xl font-bold text-white mb-4">
               Deskripsi Singkat
             </h1>
-            <p className="text-white text-lg">
+            <p className="text-white md:text-lg text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
