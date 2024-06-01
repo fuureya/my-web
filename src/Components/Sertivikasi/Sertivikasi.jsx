@@ -21,6 +21,24 @@ const Sertivikasi = () => {
       body: "Sertivikat Pelatihan Javascript",
       link: "https://instagram.com/agil.core",
     },
+    {
+      src: "img/serti1.jpg",
+      judul: "MYSQL",
+      body: "Sertivikat Pelatihan MYSQL",
+      link: "https://instagram.com/agil.core",
+    },
+    {
+      src: "img/serti2.jpg",
+      judul: "Javascipt",
+      body: "Sertivikat Pelatihan Javascript",
+      link: "https://instagram.com/agil.core",
+    },
+    {
+      src: "img/serti3.jpg",
+      judul: "Javascipt Dicoding",
+      body: "Sertivikat Pelatihan Javascript",
+      link: "https://instagram.com/agil.core",
+    },
   ];
 
   return (
@@ -37,7 +55,7 @@ const Sertivikasi = () => {
           dalam karier saya.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="flex flex-wrap mx-4">
           {data.map((item, index) => (
             <Cards
               key={index}

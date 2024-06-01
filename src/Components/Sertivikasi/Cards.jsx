@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Card } from "flowbite-react";
 
 const Cards = (props) => {
   const {
@@ -11,23 +10,26 @@ const Cards = (props) => {
   } = props;
 
   return (
-    <>
-      <Link to={link}>
-        <Card className="max-w-sm">
-          <img
-            className="object-cover w-full h-48 rounded-t-lg hover:grayscale"
-            src={src}
-            alt="Gambar Sertivikat"
-          />
-          <div className="p-4">
-            <h5 className="text-gray-300 md:text-lg text-lg font-bold">
-              {judul}
-            </h5>
-            <p className="text-gray-300 md:text-lg text-sm">{body}</p>
-          </div>
-        </Card>
-      </Link>
-    </>
+    <div className="w-full md:w-1/3 px-4 md:my-0 my-2 ">
+      <div className="shadow-lg border border-gray-300 rounded-lg overflow-hidden">
+        <div className="">
+          <div className="text-center md:text-lg text-sm text-gray-300 ">
+            <img
+              src={src}
+              alt="serti"
+              className="rounded-t-lg object-cover h-64 w-full hover:grayscale"
+            />
+          </div>{" "}
+          {/* Menampilkan ikon */}
+          <h2 className="text-center font-semibold text-gray-300 md:text-lg text-sm mt-2">
+            {judul}
+          </h2>
+          <p className=" text-center text-gray-300 md:text-lg text-sm mt-2">
+            {body}
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 
