@@ -1,3 +1,4 @@
+import Cards from "./Cards";
 import Layout from "./Layout";
 import { Card } from "flowbite-react";
 
@@ -15,6 +16,7 @@ const Sertivikasi = () => {
           kerja, serta menunjukkan dedikasi saya untuk meningkatkan keterampilan
           dalam karier saya.
         </p>
+        <Cards />
       </Layout>
     </div>
   );
