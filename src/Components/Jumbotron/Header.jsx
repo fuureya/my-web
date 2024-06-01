@@ -14,7 +14,10 @@ const Header = () => {
             >
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="#" className="text-gray-300 mr-4 hover:text-gray-400">
+            <a
+              href="https://www.linkedin.com/in/agil-jibrin/"
+              className="text-gray-300 mr-4 hover:text-gray-400"
+            >
               <i className="fab fa-linkedin"></i>
             </a>
             <a
