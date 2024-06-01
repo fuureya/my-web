@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card } from "flowbite-react";
 
 const Cards = (props) => {
@@ -6,23 +7,26 @@ const Cards = (props) => {
     src = "img/marsha.jpg",
     judul = "undefined",
     body = "lorem ipsum",
+    link = "https://instagram.com/agil.core",
   } = props;
 
   return (
     <>
-      <Card className="max-w-sm">
-        <img
-          className="object-cover w-full h-48 rounded-t-lg"
-          src={src}
-          alt="Gambar Sertivikat"
-        />
-        <div className="p-4">
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {judul}
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">{body}</p>
-        </div>
-      </Card>
+      <Link to={link}>
+        <Card className="max-w-sm">
+          <img
+            className="object-cover w-full h-48 rounded-t-lg hover:grayscale"
+            src={src}
+            alt="Gambar Sertivikat"
+          />
+          <div className="p-4">
+            <h5 className="text-gray-300 md:text-lg text-lg font-bold">
+              {judul}
+            </h5>
+            <p className="text-gray-300 md:text-lg text-sm">{body}</p>
+          </div>
+        </Card>
+      </Link>
     </>
   );
 };
