@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import Header from "./Header";
+import gambar from "../../../public/img/img.jpg";
 
 const Jumbotron = () => {
   return (
@@ -11,7 +12,7 @@ const Jumbotron = () => {
           <div className="lg:w-1/2 flex justify-center mb-10 lg:mb-0 lg:pr-10">
             <img
               className="h-48 w-48 lg:h-64 lg:w-64 rounded-full object-cover"
-              src="public/img/img.jpg"
+              src={gambar}
               alt="Your Photo"
             />
           </div>
