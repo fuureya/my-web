@@ -5,30 +5,30 @@ const SkillCard = ({ skill }) => {
   let icon;
   switch (skill.title.toLowerCase()) {
     case "programming":
-      icon = <i className="fab fa-code"></i>; // menggunakan kelas untuk ikon Font Awesome
+      icon = <i className="fa-solid fa-code md:text-5xl text-4xl"></i>;
       break;
-    case "design":
-      icon = <i className="fab fa-paint-brush"></i>;
+    case "web design":
+      icon = <i className="fa-brands fa-wordpress md:text-5xl text-4xl"></i>;
       break;
-    case "communication":
-      icon = <i className="fas fa-comments"></i>;
+    case "network configuration":
+      icon = <i className="fa-solid fa-server md:text-5xl text-4xl"></i>;
       break;
     default:
-      icon = <i className="fas fa-code"></i>; // default icon jika tidak cocok
+      icon = <i className="fas fa-code md:text-5xl text-4xl"></i>; // default icon jika tidak cocok
   }
 
   return (
     <div className="w-full md:w-1/3 p-4">
       <div className="shadow-lg border border-gray-300 rounded-lg overflow-hidden">
-        <div className="p-4">
-          <div className="text-center md:text-lg text-sm text-gray-300">
+        <div className="p-4 pt-16">
+          <div className="text-center md:text-lg text-sm text-gray-300 ">
             {icon}
           </div>{" "}
           {/* Menampilkan ikon */}
-          <h2 className="font-semibold text-gray-300 md:text-lg text-sm mt-2">
+          <h2 className="text-center font-semibold text-gray-300 md:text-lg text-sm mt-2">
             {skill.title}
           </h2>
-          <p className="text-gray-300 md:text-lg text-sm mt-2">
+          <p className=" text-center text-gray-300 md:text-lg text-sm mt-2">
             {skill.description}
           </p>
         </div>
@@ -41,21 +41,23 @@ const Skill = () => {
   const skills = [
     {
       title: "Programming",
-      description: "Expert in JavaScript, Python, and Java.",
+      description: "Mahir di JavaScript, PHP, Laravel",
     },
     {
-      title: "Design",
-      description: "Proficient in Adobe Photoshop and Illustrator.",
+      title: "Web Design",
+      description: "Mahir Menggunakan Wordpress & Page Builder",
     },
     {
-      title: "Communication",
-      description: "Excellent verbal and written communication skills.",
+      title: "Network Configuration",
+      description: "Mahir menggunakan Router Mikrotik",
     },
   ];
 
   return (
     <div className="container bg-neutral-950 md:py-10  lg:px-10 px-6">
-      <span className="text-white text-lg font-bold">Keahlian</span>
+      <h3 className="text-white text-lg text-center font-bold mb-3">
+        Keahlian
+      </h3>
       <p className="text-gray-300 md:text-lg text-sm text-justify">
         Saya memiliki keahlian yang kuat di bidang web programming, dengan
         pengalaman mendalam dalam pengembangan aplikasi web menggunakan berbagai
