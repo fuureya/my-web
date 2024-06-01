@@ -1,4 +1,5 @@
 import Layout from "./Layout";
+import { Card } from "flowbite-react";
 
 const Sertivikasi = () => {
   return (
