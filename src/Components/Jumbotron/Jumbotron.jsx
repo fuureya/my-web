@@ -18,7 +18,7 @@ const Jumbotron = () => {
           {/* Deskripsi */}
           <div className="lg:w-1/2">
             <h1 className="md:text-4xl text-xl font-bold text-white mb-4">
-              Deskripsi Singkat
+              Tentang Saya
             </h1>
             <p className="text-white md:text-lg text-sm text-justify">
               Saya Agil Jibrin, seorang yang terampil dalam pemrograman web dan
