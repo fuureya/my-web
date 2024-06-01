@@ -54,7 +54,7 @@ const Skill = () => {
   ];
 
   return (
-    <div className="container bg-neutral-950 md:py-10  lg:px-10 px-6">
+    <div className="bg-neutral-950 md:py-10  lg:px-10 px-6">
       <h3 className="text-white text-lg text-center font-bold mb-3">
         Keahlian
       </h3>
@@ -65,7 +65,7 @@ const Skill = () => {
         Laravel. Selain itu, saya juga memiliki pengetahuan yang solid dalam
         jaringan komputer, termasuk konfigurasi jaringan Mikrotik.
       </p>
-      <div className="flex flex-wrap -mx-4">
+      <div className="flex flex-wrap mx-4">
         {skills.map((skill, index) => (
           <SkillCard key={index} skill={skill} />
         ))}
