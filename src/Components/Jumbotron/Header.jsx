@@ -15,9 +15,12 @@ const Header = () => {
               <i className="fab fa-facebook-f"></i>
             </a>
             <a href="#" className="text-gray-300 mr-4 hover:text-gray-400">
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
-            <a href="#" className="text-gray-300 hover:text-gray-400">
+            <a
+              href="https://instagram.com/agil.core"
+              className="text-gray-300 hover:text-gray-400"
+            >
               <i className="fab fa-instagram"></i>
             </a>
             {/* Info */}
