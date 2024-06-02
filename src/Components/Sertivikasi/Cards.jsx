@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Cards = (props) => {
   const {
@@ -10,7 +9,11 @@ const Cards = (props) => {
   } = props;
 
   return (
-    <a href={link} className="w-full md:w-1/3 px-4 py-4 md:my-0 my-4 ">
+    <a
+      href={link}
+      className="w-full md:w-1/3 px-4 py-4 md:my-0 my-4"
+      target="_blank"
+    >
       <div className="shadow-lg border border-gray-300 rounded-lg overflow-hidden">
         <div className="">
           <div className="text-center md:text-lg text-sm text-gray-300 ">

@@ -9,27 +9,27 @@ const Sertivikasi = () => {
 
   const data = [
     {
-      src: "img/serti1.jpg",
-      judul: "MYSQL",
-      body: "Sertivikat Pelatihan MYSQL",
-      link: "https://instagram.com/agil.core",
+      src: "img/serti/01_redhat.jpg",
+      judul: "Redhat",
+      body: "Sertivikasi Pelatihan Redhat",
+      link: "https://drive.google.com/file/d/1YDEclMPZnMExu4qppNjsc9ZwNnl9cTLG/view?usp=sharinghttps://drive.google.com/file/d/1YDEclMPZnMExu4qppNjsc9ZwNnl9cTLG/view?usp=sharing",
     },
     {
-      src: "img/serti2.jpg",
-      judul: "Javascipt",
-      body: "Sertivikat Pelatihan Javascript",
-      link: "https://instagram.com/agil.core",
+      src: "img/serti/02_mtcna.jpg",
+      judul: "MTCNA",
+      body: "Sertivikasi Pelatihan Mikrotik",
+      link: "https://drive.google.com/file/d/10vU49WDFlAw0ncXMEVK5qWYrG1HJMuCw/view?usp=sharing",
     },
     {
-      src: "img/serti3.jpg",
-      judul: "Javascipt Dicoding",
-      body: "Sertivikat Pelatihan Javascript",
-      link: "https://instagram.com/agil.core",
+      src: "img/serti/03_digitalent.jpg",
+      judul: "Digitalent JNA",
+      body: "Sertivikasi Pelatihan Digitalent",
+      link: "https://drive.google.com/file/d/15oYAjAKIdt8gkZhHpbJYnX6zkNYsfTtF/view?usp=sharing",
     },
     {
-      src: "img/serti1.jpg",
-      judul: "MYSQL",
-      body: "Sertivikat Pelatihan MYSQL",
+      src: "img/serti/04_aws.jpg",
+      judul: "Pelatihan Dasar AWS",
+      body: "Sertivikat Pelatihan Dicoding Dasar AWS",
       link: "https://instagram.com/agil.core",
     },
     {
