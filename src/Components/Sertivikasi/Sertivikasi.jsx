@@ -1,7 +1,12 @@
+import React, { useState } from "react";
 import Cards from "./Cards";
 import Layout from "./Layout";
 
 const Sertivikasi = () => {
+  const initialDisplayCount = 3; // Jumlah kartu yang ditampilkan awalnya
+  const [displayCount, setDisplayCount] = useState(initialDisplayCount);
+  const [showMore, setShowMore] = useState(false);
+
   const data = [
     {
       src: "img/serti1.jpg",
@@ -41,6 +46,16 @@ const Sertivikasi = () => {
     },
   ];
 
+  const handleViewMore = () => {
+    setShowMore(true); // Menampilkan tombol "Kembali"
+    setDisplayCount(displayCount + 3); // Menambah 3 ke jumlah kartu yang ditampilkan
+  };
+
+  const handleGoBack = () => {
+    setShowMore(false); // Menyembunyikan tombol "Kembali"
+    setDisplayCount(initialDisplayCount); // Mengembalikan jumlah kartu yang ditampilkan ke jumlah awal
+  };
+
   return (
     <>
       <Layout>
@@ -56,7 +71,7 @@ const Sertivikasi = () => {
         </p>
 
         <div className="flex flex-wrap mx-4">
-          {data.map((item, index) => (
+          {data.slice(0, displayCount).map((item, index) => (
             <Cards
               key={index}
               src={item.src}
@@ -66,6 +81,22 @@ const Sertivikasi = () => {
             />
           ))}
         </div>
+        {!showMore && (
+          <button
+            className="border border-gray-300 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4 mx-auto block"
+            onClick={handleViewMore}
+          >
+            Lihat Lainnya
+          </button>
+        )}
+        {showMore && (
+          <button
+            className="border border-gray-300 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4 mx-auto block"
+            onClick={handleGoBack}
+          >
+            Sembunyikan
+          </button>
+        )}
       </Layout>
     </>
   );

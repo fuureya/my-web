@@ -10,7 +10,7 @@ const Cards = (props) => {
   } = props;
 
   return (
-    <div className="w-full md:w-1/3 px-4 md:my-0 my-2 ">
+    <a href={link} className="w-full md:w-1/3 px-4 py-4 md:my-0 my-4 ">
       <div className="shadow-lg border border-gray-300 rounded-lg overflow-hidden">
         <div className="">
           <div className="text-center md:text-lg text-sm text-gray-300 ">
@@ -29,7 +29,7 @@ const Cards = (props) => {
           </p>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
