@@ -30,25 +30,49 @@ const Sertivikasi = () => {
       src: "img/serti/04_aws.jpg",
       judul: "Pelatihan Dasar AWS",
       body: "Sertivikat Pelatihan Dicoding Dasar AWS",
-      link: "https://instagram.com/agil.core",
+      link: "https://drive.google.com/file/d/1qn7VxZtIqGPN8g69dKVaSWB7En_jg0RN/view?usp=sharing",
     },
     {
-      src: "img/serti2.jpg",
-      judul: "Javascipt",
-      body: "Sertivikat Pelatihan Javascript",
-      link: "https://instagram.com/agil.core",
+      src: "img/serti/05_frontend_1.jpg",
+      judul: "Pelatihan Frontend",
+      body: "Sertivikat Pelatihan Dicoding",
+      link: "https://drive.google.com/file/d/145YFk5EPqav-u0GOu3p_DYQSSW4486bi/view?usp=sharing",
     },
     {
-      src: "img/serti3.jpg",
-      judul: "Javascipt Dicoding",
-      body: "Sertivikat Pelatihan Javascript",
-      link: "https://instagram.com/agil.core",
+      src: "img/serti/06_frontend_2.jpg",
+      judul: "Pelatihan Intro Web",
+      body: "Sertivikat Pelatihan Dicoding",
+      link: "https://drive.google.com/file/d/1lYidBBzS1wwxjDCEjE5FMcAVuwbxB54K/view?usp=sharing",
+    },
+    {
+      src: "img/serti/07_js.jpg",
+      judul: "Pelatihan Javascript",
+      body: "Sertivikat Pelatihan Javascript Dicoding",
+      link: "https://drive.google.com/file/d/1sxeeAwGjZlKaIjJdeppnWOFkRPEEi9A0/view?usp=sharing",
+    },
+    {
+      src: "img/serti/08_mysql.jpg",
+      judul: "Pelatihan MYSQL",
+      body: "Sertivikat Pelatihan MYSQL",
+      link: "https://drive.google.com/file/d/10Q4Jba58yhUs-1vT5VhmwqfEoz9Hz8Pn/view?usp=sharing",
+    },
+    {
+      src: "img/serti/09_js.jpg",
+      judul: "Pelatihan Javascript UDEMY",
+      body: "Sertivikat Pelatihan MYSQL",
+      link: "https://drive.google.com/file/d/1SlHqXU70bmBLsyYhxdX-dUMwkBlueBOk/view?usp=sharing",
+    },
+    {
+      src: "img/serti/10_cp.jpg",
+      judul: "Competitive Programming",
+      body: "Sertivikat Partisipasi",
+      link: "https://drive.google.com/file/d/1vZe7oAuFqrUNraFax3plYmajZTlG4wzL/view?usp=sharing",
     },
   ];
 
   const handleViewMore = () => {
     setShowMore(true); // Menampilkan tombol "Kembali"
-    setDisplayCount(displayCount + 3); // Menambah 3 ke jumlah kartu yang ditampilkan
+    setDisplayCount(displayCount + 10); // Menambah 3 ke jumlah kartu yang ditampilkan
   };
 
   const handleGoBack = () => {
@@ -83,7 +107,7 @@ const Sertivikasi = () => {
         </div>
         {!showMore && (
           <button
-            className="border border-gray-300 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4 mx-auto block"
+            className="border border-gray-300 hover:bg-gray-600 md:text-lg text-sm text-gray-300 font-bold py-2 px-4 rounded mt-4 mx-auto block"
             onClick={handleViewMore}
           >
             Lihat Lainnya
@@ -91,7 +115,7 @@ const Sertivikasi = () => {
         )}
         {showMore && (
           <button
-            className="border border-gray-300 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4 mx-auto block"
+            className="border border-gray-300 hover:bg-gray-600 md:text-lg text-sm text-gray-300 font-bold py-2 px-4 rounded mt-4 mx-auto block"
             onClick={handleGoBack}
           >
             Sembunyikan
