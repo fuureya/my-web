@@ -122,6 +122,8 @@ const Sertivikasi = () => {
           </button>
         )}
       </Layout>
+
+      {/* push dulu */}
     </>
   );
 };
