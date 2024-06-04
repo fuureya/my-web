@@ -124,6 +124,7 @@ const Sertivikasi = () => {
       </Layout>
 
       {/* push dulu */}
+      {/* pudh lagi */}
     </>
   );
 };
