@@ -123,6 +123,7 @@ const Sertivikasi = () => {
         )}
       </Layout>
     </>
+    // sory hanya segini
   );
 };
 
